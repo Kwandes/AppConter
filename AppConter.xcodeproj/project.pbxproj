@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		3DA9D06525ECD51E005A5D0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA9D06325ECD51E005A5D0F /* LaunchScreen.storyboard */; };
 		3DA9D07025ECD51F005A5D0F /* AppConterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA9D06F25ECD51F005A5D0F /* AppConterTests.swift */; };
 		3DA9D07B25ECD51F005A5D0F /* AppConterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA9D07A25ECD51F005A5D0F /* AppConterUITests.swift */; };
+		3DA9D0A625ECF779005A5D0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DA9D0A525ECF779005A5D0F /* GoogleService-Info.plist */; };
 		9B5BAE1C3F93FD87D2E7C81A /* Pods_AppConter_AppConterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440C809220939144694135F2 /* Pods_AppConter_AppConterUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		3DA9D07625ECD51F005A5D0F /* AppConterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppConterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA9D07A25ECD51F005A5D0F /* AppConterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConterUITests.swift; sourceTree = "<group>"; };
 		3DA9D07C25ECD51F005A5D0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA9D0A525ECF779005A5D0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		440C809220939144694135F2 /* Pods_AppConter_AppConterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppConter_AppConterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50150845C8CBFB88D9F59D09 /* Pods-AppConter-AppConterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppConter-AppConterUITests.release.xcconfig"; path = "Target Support Files/Pods-AppConter-AppConterUITests/Pods-AppConter-AppConterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5A4565F73C92BE773427BCBF /* Pods-AppConterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppConterTests.release.xcconfig"; path = "Target Support Files/Pods-AppConterTests/Pods-AppConterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +103,6 @@
 				AD508639C4D0EB0176C706E0 /* Pods-AppConterTests.debug.xcconfig */,
 				5A4565F73C92BE773427BCBF /* Pods-AppConterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -146,6 +147,7 @@
 				3DA9D05E25ECD51D005A5D0F /* Main.storyboard */,
 				3DA9D06125ECD51E005A5D0F /* Assets.xcassets */,
 				3DA9D06325ECD51E005A5D0F /* LaunchScreen.storyboard */,
+				3DA9D0A525ECF779005A5D0F /* GoogleService-Info.plist */,
 				3DA9D06625ECD51E005A5D0F /* Info.plist */,
 			);
 			path = AppConter;
@@ -278,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA9D06525ECD51E005A5D0F /* LaunchScreen.storyboard in Resources */,
+				3DA9D0A625ECF779005A5D0F /* GoogleService-Info.plist in Resources */,
 				3DA9D06225ECD51E005A5D0F /* Assets.xcassets in Resources */,
 				3DA9D06025ECD51D005A5D0F /* Main.storyboard in Resources */,
 			);
