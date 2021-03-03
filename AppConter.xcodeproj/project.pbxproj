@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		24ADFAF012A367A9F91ED732 /* Pods_AppConter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC038ABF4D29088AFF373917 /* Pods_AppConter.framework */; };
 		37A5470C93E91A5531F4CE22 /* Pods_AppConterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FADE6C1BBC326356BD4F4FA /* Pods_AppConterTests.framework */; };
+		3D7D06C125EFD18C005CBA66 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D06C025EFD18C005CBA66 /* Note.swift */; };
+		3D7D06D025EFD6DB005CBA66 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7D06CF25EFD6DB005CBA66 /* FirebaseService.swift */; };
 		3DA9D05925ECD51D005A5D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA9D05825ECD51D005A5D0F /* AppDelegate.swift */; };
 		3DA9D05B25ECD51D005A5D0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA9D05A25ECD51D005A5D0F /* SceneDelegate.swift */; };
 		3DA9D05D25ECD51D005A5D0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA9D05C25ECD51D005A5D0F /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 		066A0522EA3650ECFF43FE19 /* Pods-AppConter-AppConterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppConter-AppConterUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppConter-AppConterUITests/Pods-AppConter-AppConterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0FADE6C1BBC326356BD4F4FA /* Pods_AppConterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppConterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A63EE364040E42087102FFD /* Pods-AppConter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppConter.debug.xcconfig"; path = "Target Support Files/Pods-AppConter/Pods-AppConter.debug.xcconfig"; sourceTree = "<group>"; };
+		3D7D06C025EFD18C005CBA66 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		3D7D06CF25EFD6DB005CBA66 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		3DA9D05525ECD51D005A5D0F /* AppConter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppConter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA9D05825ECD51D005A5D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DA9D05A25ECD51D005A5D0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +120,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3D7D06BF25EFD165005CBA66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D7D06C025EFD18C005CBA66 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D7D06CB25EFD6AE005CBA66 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3D7D06CF25EFD6DB005CBA66 /* FirebaseService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		3DA9D04C25ECD51D005A5D0F = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +161,8 @@
 		3DA9D05725ECD51D005A5D0F /* AppConter */ = {
 			isa = PBXGroup;
 			children = (
+				3D7D06CB25EFD6AE005CBA66 /* Service */,
+				3D7D06BF25EFD165005CBA66 /* Model */,
 				3DA9D05825ECD51D005A5D0F /* AppDelegate.swift */,
 				3DA9D05A25ECD51D005A5D0F /* SceneDelegate.swift */,
 				3DA9D05C25ECD51D005A5D0F /* ViewController.swift */,
@@ -411,8 +433,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA9D05D25ECD51D005A5D0F /* ViewController.swift in Sources */,
+				3D7D06D025EFD6DB005CBA66 /* FirebaseService.swift in Sources */,
 				3DA9D05925ECD51D005A5D0F /* AppDelegate.swift in Sources */,
 				3DA9D05B25ECD51D005A5D0F /* SceneDelegate.swift in Sources */,
+				3D7D06C125EFD18C005CBA66 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
