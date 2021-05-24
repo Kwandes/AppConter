@@ -22,5 +22,11 @@ class ViewController: UIViewController {
         print("---------------------------------")
         
     }
+    
+    @IBAction func getRandomName(_ sender: UIButton) {
+        print("Generate new name button got pressed")
+        print("---------------------------------")
+        
+    }
 }
 
