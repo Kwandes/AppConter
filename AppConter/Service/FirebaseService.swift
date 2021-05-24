@@ -18,6 +18,11 @@ class FirebaseService {
             }
     }
     
+    func getRandomName() -> String
+    {
+        return "yeet"
+    }
+    
     func startListener() {
         database.collection("notes").addSnapshotListener {
             (snap, error) in

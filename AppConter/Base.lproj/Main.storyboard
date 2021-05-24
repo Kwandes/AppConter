@@ -78,6 +78,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="randomNameLabel" destination="23b-je-aUw" id="ICK-QZ-syZ"/>
                         <outlet property="textView" destination="tV3-jb-E4l" id="bz8-Xu-6JI"/>
                     </connections>
                 </viewController>

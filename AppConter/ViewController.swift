@@ -5,6 +5,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextField!
     
+    @IBOutlet weak var randomNameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
     
     @IBAction func getRandomName(_ sender: UIButton) {
         print("Generate new name button got pressed")
+        randomNameLabel.text = firebaseService.getRandomName()
         print("---------------------------------")
         
     }
