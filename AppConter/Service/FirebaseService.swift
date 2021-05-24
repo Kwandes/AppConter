@@ -48,25 +48,4 @@ class FirebaseService {
             }
         }
     }
-    
-    // get the data from the database
-    func startListener() {
-        database.collection("names").addSnapshotListener {
-            (snap, error) in
-            print("Snapshot doing its thing")
-            if let e = error{
-                print ("Error fetching data \(e)")
-            } else {
-                if let s = snap {
-                    for document in s.documents {
-                        print(document.documentID)
-                        print(document.data()["text"] as! String)
-                    }
-                    print("Finished fetching DB data")
-                }
-            }
-        }
-        
-        updateNames()
-    }
 }

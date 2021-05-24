@@ -9,7 +9,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        firebaseService.startListener() // get all the names from the database
+        firebaseService.updateNames() // get all the names from the database
         print("---------------------------------")
     }
     
