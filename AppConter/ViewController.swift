@@ -16,7 +16,11 @@ class ViewController: UIViewController {
     @IBAction func saveToFirebasePressed(_ sender: UIButton) {
         print("Save to Firebase Btn got pressed")
         if let text = textView.text {
+            if text.count > 100 {
+                print("The name is too long, not adding it")
+            }
             firebaseService.addName(text: text)
+            textView.text = ""
         }
         print("---------------------------------")
         
