@@ -9,7 +9,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        firebaseService.startListener() // get all the notes from the database
+        firebaseService.startListener() // get all the names from the database
         print("---------------------------------")
     }
     
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBAction func saveToFirebasePressed(_ sender: UIButton) {
         print("Save to Firebase Btn got pressed")
         if let text = textView.text {
-            firebaseService.addNote(text: text)
+            firebaseService.addName(text: text)
         }
         print("---------------------------------")
         

@@ -1,6 +1,6 @@
 import Foundation
 
-class Note {
+class Name {
     var id:String
     var text:String
     
