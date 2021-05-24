@@ -1,11 +1,13 @@
 import Foundation
 import Firebase
 
+// all your database connection and query needs will be satisfied here
 class FirebaseService {
     
     private var database = Firestore.firestore()
     private var names = [String]()
     
+    // add a new name to the database
     func addName(text:String) {
             if text.count > 0 {
                 let document = database.collection("names").document()
@@ -19,12 +21,13 @@ class FirebaseService {
         updateNames()
     }
     
+    // get a random name. Return "n/a" if there are no names present
     func getRandomName() -> String
     {
-        // get a random name. Return "n/a" if there are no names present
         return names.randomElement() == nil ? "n/a" : names.randomElement()!
     }
     
+    // sync the names[] array with the database
     func updateNames()
     {
         print("Updating the names array")
@@ -46,6 +49,7 @@ class FirebaseService {
         }
     }
     
+    // get the data from the database
     func startListener() {
         database.collection("names").addSnapshotListener {
             (snap, error) in

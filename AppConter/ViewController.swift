@@ -13,8 +13,6 @@ class ViewController: UIViewController {
         print("---------------------------------")
     }
     
-
-    
     @IBAction func saveToFirebasePressed(_ sender: UIButton) {
         print("Save to Firebase Btn got pressed")
         if let text = textView.text {
@@ -26,7 +24,9 @@ class ViewController: UIViewController {
     
     @IBAction func getRandomName(_ sender: UIButton) {
         print("Generate new name button got pressed")
-        randomNameLabel.text = firebaseService.getRandomName()
+        let randomName = firebaseService.getRandomName()
+        print("Setting generated name to \(randomName)")
+        randomNameLabel.text = randomName
         print("---------------------------------")
         
     }
